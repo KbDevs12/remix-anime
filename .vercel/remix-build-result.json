@@ -1,0 +1,134 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/category.anime": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/anime.$id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/search": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/about": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/category.anime": {
+        "file": "app/routes/category.anime.tsx",
+        "id": "routes/category.anime",
+        "path": "category/anime",
+        "parentId": "root",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/anime.$id": {
+        "file": "app/routes/anime.$id.tsx",
+        "id": "routes/anime.$id",
+        "path": "anime/:id",
+        "parentId": "root",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/search": {
+        "file": "app/routes/search.tsx",
+        "id": "routes/search",
+        "path": "search",
+        "parentId": "root",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_index": {
+        "file": "app/routes/_index.tsx",
+        "id": "routes/_index",
+        "index": true,
+        "parentId": "root",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/about": {
+        "file": "app/routes/about.tsx",
+        "id": "routes/about",
+        "path": "about",
+        "parentId": "root",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "remixConfig": {
+    "appDirectory": "D:\\CODE\\REACT\\remix-anime\\app",
+    "basename": "/",
+    "buildDirectory": "D:\\CODE\\REACT\\remix-anime\\build",
+    "future": {
+      "v3_fetcherPersist": true,
+      "v3_relativeSplatPath": true,
+      "v3_throwAbortReason": true,
+      "v3_singleFetch": true,
+      "v3_lazyRouteDiscovery": true,
+      "unstable_optimizeDeps": false,
+      "unstable_routeConfig": false
+    },
+    "manifest": false,
+    "publicPath": "/",
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/category.anime": {
+        "file": "routes/category.anime.tsx",
+        "id": "routes/category.anime",
+        "path": "category/anime",
+        "parentId": "root"
+      },
+      "routes/anime.$id": {
+        "file": "routes/anime.$id.tsx",
+        "id": "routes/anime.$id",
+        "path": "anime/:id",
+        "parentId": "root"
+      },
+      "routes/search": {
+        "file": "routes/search.tsx",
+        "id": "routes/search",
+        "path": "search",
+        "parentId": "root"
+      },
+      "routes/_index": {
+        "file": "routes/_index.tsx",
+        "id": "routes/_index",
+        "index": true,
+        "parentId": "root"
+      },
+      "routes/about": {
+        "file": "routes/about.tsx",
+        "id": "routes/about",
+        "path": "about",
+        "parentId": "root"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
