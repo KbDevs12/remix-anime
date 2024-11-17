@@ -25,15 +25,16 @@ This project showcases my ability to integrate various technologies to create a 
 To run this project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Kbdevs12/remix-anime.git
    ```
 
-````
 2. Navigate to the project directory:
+
 ```bash
     cd remix-anime
-````
+```
 
 3. Install the dependencies:
 
