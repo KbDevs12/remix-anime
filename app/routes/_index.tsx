@@ -9,6 +9,7 @@ import Pagination from "~/components/Pagination";
 import { baseUrl } from "~/libs/dataFetcher.server";
 import HeaderComps from "~/components/HeaderComps";
 
+export const config = { runtime: "nodejs" };
 export const meta: MetaFunction = () => {
   return [
     { title: "Home | AnimeX" },
