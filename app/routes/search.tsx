@@ -1,7 +1,7 @@
 import { LoaderFunction } from "@remix-run/node";
 import { useLoaderData, useSearchParams, useSubmit } from "@remix-run/react";
 import { useState, useEffect } from "react";
-import dataFetcher from "~/libs/dataFetcher";
+import dataFetcher from "~/libs/dataFetcher.server";
 import { AnimeLink } from "~/interfaces/interfaces";
 import CardList from "~/components/CardList";
 import { MetaFunction } from "@remix-run/react";

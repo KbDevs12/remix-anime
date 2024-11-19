@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CardList from "~/components/CardList";
 import Pagination from "~/components/Pagination";
 import { AnimeLink, PaginationLink } from "~/interfaces/interfaces";
-import dataFetcher, { baseUrl } from "~/libs/dataFetcher";
+import dataFetcher, { baseUrl } from "~/libs/dataFetcher.server";
 
 export const meta: MetaFunction = () => {
   return [

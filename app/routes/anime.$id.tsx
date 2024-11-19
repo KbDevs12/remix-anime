@@ -7,7 +7,7 @@ import {
 } from "@remix-run/react";
 import DisqusComments from "~/components/DisqusComment";
 import { detailsAnimeEps } from "~/interfaces/interfaces";
-import dataFetcher, { baseUrl } from "~/libs/dataFetcher";
+import dataFetcher, { baseUrl } from "~/libs/dataFetcher.server";
 import { decodeUrl, encodeUrl } from "~/libs/urlCiphers";
 interface loaderData {
   animeDetails: detailsAnimeEps;
